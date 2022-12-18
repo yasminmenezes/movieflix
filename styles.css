@@ -1,56 +1,111 @@
+:root {
+    --background-color: #0d253f;
+    --primary-color: #01b4e4;
+    --white: #fff;
+    --green: #90cea1;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+body {
+    background: var(--background-color);
+    --webkit-font-smoothing: antialiased;
+}
+
+body, input, textarea, button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+button {
+    cursor: pointer;
+}
+
+[disabled] {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
 body {
     font-family: "Roboto Mono", monospace;
     text-align: center;
     /* background-image: url("https://www.alura.com.br/assets/img/imersoes/dev-2021/dia-04-aluraflix-e-filmes.png"); */
-    background-color: #0d253f;
+    /* background-color: #0d253f; */
+    background: linear-gradient(90deg, rgba(144,206,161,1) 24%, rgba(1,180,228,1) 100%);
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
   }
-  
-  .container {
+
+.header header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.75rem 0;
+    /* background-color: linear-gradient(90deg, rgba(13,37,63,1) 27%, rgba(1,180,228,1) 100%); */
+    background-color: #0d253f;
+}
+
+.menu {
+    display: flex;
+    gap: 1.5rem;
+    margin-right: 2rem;
+    color: var(--primary-color);
+}
+
+.menu button{
+    background-color: var(--background-color);
+    color: var(--green);
+    border: var(--green) solid 2px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.container {
     text-align: center;
     padding: 20px;
-  }
-  
-  .page-title {
-    font-size: 4rem;
-    color: #90cea1;
-    margin: 0 0 5px;
-  }
-  
-  .page-subtitle {
+}
+
+.page-title {
+    font-size: 3rem;
+    color: var(--green);
+    border: var(--green) solid 2px;
+    border-radius: 20px;
+    margin-left: 2rem;
+    padding: 5px;
+}
+
+.page-subtitle {
     color: #90cea1;
     margin-top: 5px;
-  }
-  
-  .page-logo {
-    width: 200px;
-  }
-  
-  .alura-logo {
-    width: 40px;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-  }
-  
-  body > img {
-    margin: 0 10px;
-  }
-  
-  img {
-    max-height: 250px;
-  }
+}
 
-  .footer{
+/* body > img {
+    margin: 0 10px;
+} */
+
+img {
+    max-height: 250px;
+    margin: 5px 10px;
+}
+
+.footer{
     color: #90cea1;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2rem;
-  }
-  
-  .footer img{
+    background-color: var(--background-color);
+}
+
+.footer img{
     height: 1rem;
-  }
+}
